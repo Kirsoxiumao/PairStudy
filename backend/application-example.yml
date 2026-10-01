@@ -1,0 +1,9 @@
+# Copy to application-local.yml, then start with --spring.profiles.active=local.
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/pairstudy?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: pairstudy
+    password: YOUR_PASSWORD
+app:
+  jwt-secret: REPLACE_WITH_A_RANDOM_SECRET_AT_LEAST_32_BYTES
+  upload-dir: ./uploads

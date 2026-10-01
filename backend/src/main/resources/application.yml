@@ -1,0 +1,24 @@
+server:
+  address: 0.0.0.0
+  port: ${PORT:8080}
+  error:
+    include-message: never
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/pairstudy?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai}
+    username: ${DB_USER:pairstudy}
+    password: ${DB_PASSWORD:}
+  servlet:
+    multipart:
+      max-file-size: 8MB
+      max-request-size: 9MB
+  jackson:
+    time-zone: Asia/Shanghai
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+app:
+  jwt-secret: ${JWT_SECRET:}
+  jwt-hours: 168
+  zone: Asia/Shanghai
+  upload-dir: ${UPLOAD_DIR:./uploads}

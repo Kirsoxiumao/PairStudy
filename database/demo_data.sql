@@ -1,0 +1,3 @@
+-- Intentionally no pre-created users or fixed checkins.
+-- Register two real accounts in the app; generate an invite, bind, and create categories.
+-- Use backend integration tests for isolated reproducible test data.

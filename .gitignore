@@ -1,0 +1,11 @@
+**/build/
+**/.gradle/
+**/.idea/
+**/local.properties
+backend/target/
+backend/uploads/
+backend/application-local.yml
+.tools/
+*.log
+*.jks
+*.keystore
